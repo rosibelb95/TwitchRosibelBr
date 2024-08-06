@@ -1,0 +1,407 @@
+/*ESTILOS GENERALES*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: arial;
+
+    ::-webkit-scrollbar {
+        display: none;
+    }
+  
+}
+
+a {
+    color: #A883E0;
+}
+
+h2,h3,h4,p,.Categ1 a,.Categ2 a,.Categ3 a,.Categ4 a,.Categ5 a,.Categ6 a {
+    color: #ffffff;
+}
+p,.Categ1 a,.Categ2 a,.Categ3 a,.Categ4 a,.Categ5 a,.Categ6 a {
+    font-weight: bold;
+}
+
+
+/*estilos del nav*/
+nav {
+    background-color: #18181B;
+    height: 3em;
+    display: flex;
+    z-index: 1000;
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
+
+nav div {
+    display: flex;
+    width: 100%;
+
+}
+
+nav div:nth-child(1) {
+    padding: 13px;
+    gap: 40px;
+
+}
+
+nav div:nth-child(3) {
+
+    padding: 10px;
+    gap: 20px;
+    justify-content: end;
+
+}
+
+button {
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 5px 9px;
+    border: none;
+    font-weight: bold;
+    width: max-content;
+
+
+
+
+
+}
+
+.BtnNav {
+
+    background-color: #18181B;
+}
+
+.imgbutton {
+    width: 25px;
+    background-color: #18181B;
+}
+
+.btningresar {
+    background-color: #2F2F35;
+}
+
+.btnregistro {
+    background-color: #9147FF;
+
+}
+
+.btnregistro a,
+.btningresar a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.btnregistro:hover {
+    background-color: #772CE8;
+}
+
+main div aside {
+    background-color: #1f1f23;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    z-index: 15;
+
+}
+
+.imglateral {
+    width: 47px;
+    padding: 3px;
+    margin-left: 3px;
+}
+
+main .contenedor {
+    display: flex;
+    position: absolute;
+    top: 47px;
+}
+
+.contenedor2 {
+    width: 96.3%;
+    background-color: #0e0e10;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 40px;
+    top: 47px;
+    padding: 5px 0 0 20px;
+
+}
+/*Estilos de las categorias*/
+.Conte_Categorias {
+    display: grid;
+    position: relative;
+    z-index: 5;
+}
+
+.SectionSuperior {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.ImgPrincipal {
+    position: absolute;
+    z-index: 12;
+}
+
+.ImgDos {
+    position: relative;
+    left: 20px;
+    z-index: 11;
+}
+
+.ImgTres {
+    position: absolute;
+    right: 320px;
+    z-index: 10;
+}
+
+.ImgCuatro {
+    position: absolute;
+    right: 257px;
+    z-index: 9;
+}
+
+.ImgCinco {
+    position: absolute;
+    right: 340px;
+    z-index: 8;
+}
+
+.ImgSeis {
+    position: relative;
+    left: 40px;
+    z-index: 7;
+}
+
+.CanalesD {
+    display: flex;
+    justify-content: center;
+}
+
+.TituloCanales {
+    margin: 12px 0 15px 0;
+}
+
+
+.Categ1 {
+    grid-area: Categ1;
+}
+
+.Categ2 {
+    grid-area: Categ2;
+}
+
+
+.Categ3 {
+    grid-area: Categ3;
+}
+
+.Categ4 {
+    grid-area: Categ4;
+
+}
+
+.DivInferior {
+    grid-area: DivInferior;
+
+}
+
+.TituloCateg {
+    grid-area: TituloCateg;
+}
+
+.TituloCateg a, .TituloCanales a{
+   text-decoration: none;
+}
+
+footer {
+    width: 100%;
+    background-color: #451093;
+    position: fixed;
+    z-index: 18;
+    bottom: 0px;
+
+}
+
+.BtnRegistroF a {
+    text-decoration: none;
+    color: black;
+
+
+}
+
+.BtnSuperior {
+    color: #ffffff;
+    background-color: rgb(14, 14, 16);
+
+}
+
+.BtnSuperior a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 25px;
+}
+
+
+footer div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 9px;
+
+}
+
+footer div img {
+    width: 8%;
+}
+
+.Categ1 a,.Categ2 a,.Categ3 a,.Categ4 a,.Categ5 a,.Categ6 a {
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.Categ1 a:hover,.Categ2 a:hover,.Categ3 a:hover,.Categ4 a:hover,.Categ5 a:hover,.Categ6 a:hover {
+    color: #451093;
+}
+
+.Conte_Categorias p {
+    font-size: 12px;
+}
+
+/*Medidas desde 749px*/
+
+@media only screen and (min-width: 749px) {
+
+    .txtMax,.NavMobile,.SectionMobile,.AsideMobile {
+        display: none;
+    }
+
+
+    nav div {
+        padding: 13px 0 10px 0;
+
+
+
+    }
+
+    .Buscar {
+        width: 60%;
+        padding: 10px;
+        border-radius: 4px;
+        border-color: #ffffff;
+    }
+
+    .Buscar:focus {
+        border-color: #A970FF;
+    }
+
+    footer div img {
+        width: 3%;
+    }
+
+
+    .imgcontenedor2 {
+        width: 500px;
+    }
+
+    .imgCanales {
+        width: 350px;
+    }
+
+    .contenedor aside {
+        width: 220px;
+    }
+
+    .contenedor2 {
+        left: 200px;
+        width: 85.2%;
+        
+    }
+
+    p {
+        font-size: 12px;
+    }
+
+    .UsuarioCanales {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .AsideWeb {
+        height: 100%;
+    }
+
+    .TituloCanales {
+        margin-left: 43px;
+    }
+
+
+
+    .Conte_Categorias {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 30px;
+        grid-template-areas:
+            "TituloCateg TituloCateg TituloCateg TituloCateg TituloCateg TituloCateg"
+            "Categ1 Categ2 Categ3 Categ4 Categ5 Categ6"
+            "DivInferior DivInferior DivInferior DivInferior DivInferior DivInferior"
+        ;
+        padding-left: 20px;
+    }
+
+    .imgCategoria {
+        width: 75%;
+    }
+
+    .DivInferior {
+        height: 45px;
+    }
+
+}
+
+/*Medida hasta 748px*/
+
+@media only screen and (max-width: 748px) {
+    .section img {
+        width: 90%;
+
+    }
+
+    .contenedor2 {
+        width: 92.3%;
+
+    }
+
+    .Conte_Categorias {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 30px;
+        grid-template-areas:
+            "TituloCateg TituloCateg TituloCateg TituloCateg"
+            "Categ1 Categ2 Categ3 Categ4"
+
+        ;
+        
+    }
+
+
+    .imgCategoria {
+        width: 95%;
+    }
+
+    .txtMin,.NavWeb,.SectionWeb,.AsideWeb,.Categ5,.Categ6 {
+        display: none;
+    }
+
+    .imgcontenedor2 {
+        padding: 12px 0 20px 0;
+
+    }
+
+    .DivInferior {
+        height: 52px;
+    }
+}
